@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators Quiz</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <!-- Engineer's Name Input -->
+        <div id="name-setup" class="text-center mb-4">
+            <h4>Enter Engineer's Name:</h4>
+            <input type="text" id="engineer-name" class="form-control w-50 mx-auto" placeholder="Your name">
+            <button id="name-submit" class="btn btn-primary btn-lg mt-3">Submit</button>
+        </div>
+
+        <!-- Quiz Setup -->
+        <div id="quiz-setup"
+            class="text-center mb-4 d-none visible quiz-setup w-100  p-3 shadow bg-light text-black border-primary rounded mx-auto">
+            <h4 class="mb-3 border border-primary p-3 rounded w-50 mx-auto shadow bg-light text-primary">Select Quiz
+                Type</h4>
+            <select class="form-select mb-3 w-50 mx-auto shadow bg-light text-black border-primary rounded"
+                id="quiz-type">
+                <option value="arithmetic">Arithmetic Operators (+, -, *, /, %)</option>
+                <option value="increment">Increment Operators (++)</option>
+                <option value="decrement">Decrement Operators (--)</option>
+                <option value="comparison">Comparison Operators (==, ===, !=, !==)</option>
+                <option value="logical">Logical Operators (&&, ||, !)</option>
+                <option value="assignment">Assignment Operators (=, +=, -=, *=, /=)</option>
+                <option value="bitwise">Bitwise Operators (&, |, ^, ~, <<,>>)</option>
+                <option value="conditional">Conditional (Ternary) Operator (?:)</option>
+            </select>
+            <br>
+            <button id="start-quiz" class="btn btn-primary btn-lg">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" class="quiz-container d-none">
+            <h2 id="question-text" class="mb-4 text-center"></h2>
+            <div id="options-container" class="mb-4"></div>
+            <div class="text-center">
+                <span id="question-counter" class="mb-3 d-block"></span>
+            </div>
+        </div>
+
+        <!-- Success Message and Retry Option -->
+        <div id="success-message" class="text-center d-none">
+            <h2 class="text-success">Great job, <span id="user-name"></span>! You've completed the quiz!</h2>
+            <p>Your score: <span id="score-percent"></span></p>
+            <ul id="wrong-questions-list"></ul>
+            <button id="retry-quiz" class="btn btn-primary mt-3">Try Again</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

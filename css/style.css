@@ -1,0 +1,100 @@
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.options-container button:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+  background-color: aqua;
+}
+.options-container button:active {
+  transform: translateY(2px);
+  transition: transform 0.2s;
+}
+.success-message {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.wrong-questions-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.wrong-questions-list li {
+  margin-bottom: 10px;
+}
+.retry-quiz {
+  margin-top: 20px;
+}
+.retry-quiz:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+}
+.retry-quiz:active {
+  transform: translateY(2px);
+  transition: transform 0.2s;
+}
+
+.quiz-setup {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-setup h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quiz-setup select {
+  margin-bottom: 20px;
+}
+
+.quiz-setup button {
+  margin-top: 20px;
+}
+
+.quiz-setup button:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+}
+
+.quiz-setup button:active {
+  transform: translateY(2px);
+  transition: transform 0.2s;
+}
+
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quiz-container button {
+  margin-top: 20px;
+}
+
+.quiz-container button:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+  background-color: rgb(84, 185, 192);
+}
+
+.quiz-container button:active {
+  transform: translateY(2px);
+  transition: transform 0.2s;
+  background-color: rgb(185, 236, 240);
+}
+
+.options-container button {
+  margin-bottom: 10px;
+}
